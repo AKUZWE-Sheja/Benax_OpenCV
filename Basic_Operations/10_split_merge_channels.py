@@ -3,9 +3,10 @@ import numpy as np
 
 # Read the image 'lena.jpg'
 image = cv2.imread('lena.jpg')
+resized_image = cv2.resize(image, (image.shape[1] // 4, image.shape[0] // 4))
 
 # Split the image into its B, G, and R color channels
-b, g, r = cv2.split(image)
+b, g, r = cv2.split(resized_image)
 
 # Create colorized versions of each channel
 blue_channel = cv2.merge((b, np.zeros_like(b), np.zeros_like(b)))  # Only Blue
