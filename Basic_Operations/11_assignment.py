@@ -15,8 +15,8 @@ cv2.rectangle(resized_image, (130, 95), (495, 465), (0, 255, 0), 4)
 # Define text properties
 text = 'RAH972U'
 font = cv2.FONT_HERSHEY_SIMPLEX
-font_scale = 1.3
-font_thickness = 2
+font_scale = 1.4
+font_thickness = 3
 text_color = (0, 255, 0)
 
 # Get text size
